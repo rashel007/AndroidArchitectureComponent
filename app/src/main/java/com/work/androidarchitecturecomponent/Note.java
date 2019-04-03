@@ -3,7 +3,7 @@ package com.work.androidarchitecturecomponent;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "note_table")
 public class Note {
 
     @PrimaryKey(autoGenerate = true)
