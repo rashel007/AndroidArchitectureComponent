@@ -4,13 +4,14 @@ import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
 
-import java.util.ArrayList;
+import java.util.List;
+
 
 public class NoteRepository {
 
     private NoteDao noteDao;
 
-    private LiveData<ArrayList<Note>> allNotes;
+    private LiveData<List<Note>> allNotes;
 
 
     public NoteRepository(Application application) {
@@ -38,7 +39,7 @@ public class NoteRepository {
     }
 
 
-    public LiveData<ArrayList<Note>> getAllNotes() {
+    public LiveData<List<Note>> getAllNotes() {
         return allNotes;
     }
 
